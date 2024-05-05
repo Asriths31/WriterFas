@@ -1,5 +1,5 @@
 import PrimaryButton from "../components/PrimaryButton"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {LinearProgress} from '@mui/material'
 import Cookies from 'universal-cookie';
 import axios from 'axios';
@@ -11,6 +11,15 @@ export default function Write(){
     const [text, setText] = useState("");
     const cookies = new Cookies();
     const navigate = useNavigate();
+    const name = cookies.get("name")
+
+   
+    useEffect(()=>{
+        if(name === undefined){
+            navigate("/register")
+        }
+    
+    },[])
 
     const handleTitleChange = (e)=>{
         setTitle(e.target.value);

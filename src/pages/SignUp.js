@@ -6,9 +6,11 @@ import EndCreds from '../components/EndCreds';
 import axios from 'axios';
 import { LinearProgress } from '@mui/material';
 import Cookies from 'universal-cookie';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function SignUp(){
+    const navigate = useNavigate();
     const cookies = new Cookies();
     const [loading, setLoading] = useState(0)
     const passwordRef = useRef(0)
@@ -16,6 +18,7 @@ export default function SignUp(){
     const [userName, setUsername] = useState("")
     const [email,setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [about,setAbout] = useState("")
 
     const handleOpenEye = () =>{
         setEyeState(1)
@@ -32,11 +35,12 @@ export default function SignUp(){
             userName:userName,
             email:email,
             password:password,
+            about:about,
         })
         .then((res)=>{
             cookies.set("name",res.data.token)
-            console.log(res.data.token)
             setLoading(0)
+            navigate("/")
         })
         .catch((e)=>{
 
@@ -52,6 +56,10 @@ export default function SignUp(){
 
     const handlePasswordChange = (e)=>{
         setPassword(e.target.value)
+    }
+
+    const handleAboutChange = (e)=>{
+        setAbout(e.target.value)
     }
 
     return(
@@ -72,6 +80,12 @@ export default function SignUp(){
                     enter email
                 </p>
                 <input className="InputBox" type="email" value={email} onChange={handleEmailChange}/>
+            </div>
+            <div className="aboutInput">
+                <p className="InputLabel">
+                    enter about
+                </p>
+                <input className="InputBox" type="email" value={about} onChange={handleAboutChange}/>
             </div>
             <div className="passwordInput">
                 <p className="InputLabel">

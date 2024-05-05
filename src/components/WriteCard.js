@@ -4,9 +4,6 @@ export default function WriteCard(props){
     return(
         <div className="WriteCardHolder">
             <div className="WriteCardHead">
-                <div className="WriteCardProfile">
-                    <img src={props.profile} alt="profile" width="70px"/>
-                </div>
                 <div className="WriteCardHeadContent">
                     <p className='CardUserName'>
                         {props.username}
