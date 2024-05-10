@@ -1,0 +1,584 @@
+.LoginPageHolder{
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    justify-content: space-between;
+    width: 100vw;
+    /* background-color: #7469B6; */
+    /* align-content:start; */
+    overflow-x: hidden;
+    scrollbar-color: black;
+}
+.WriteContent{
+   height: 100vh;
+   margin-top: 80px;
+}
+.quoteDiv{
+    /* display: flex;
+    flex-direction:column ; */
+    background-color: #F8ECD1; 
+    position: relative;
+    width: 50vw;
+    min-height:100vh ;
+    
+    /* display: block; */
+}
+.quotePic img{
+    position: fixed;
+    right: 0;
+    top: 50vh;
+}
+
+.border{
+    border-left:2px solid rgba(0,0,0,0.3);
+}
+
+.tabSwitch{
+    background-color: #FDD9CF;
+    margin-top: 30px;
+    /* margin-bottom: -40px; */
+    display:flex;
+    font-size:25px;
+    width:30vw;
+    padding:20px;
+    border-radius: 10px;
+    color:#AC7D88;
+    justify-content: space-evenly;
+}
+
+.switch{
+    cursor: pointer;
+}
+
+.selectedTab{
+    color:#944E63;
+    font-weight: 700;
+}
+
+.EndCredsList{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.InputLabel{
+    font-size:25px;
+    font-weight: 500;
+}
+
+.InputBox{
+    width:600px;
+    height:50px;
+    border:1px solid #944E63;
+    outline: none !important;
+    padding-left:10px;
+    font-size:21px;
+    font-family: 'Rethink Sans',sans-serif;
+    border-radius: 10px;
+}
+
+.resetPasswordHolder{
+    display: flex;
+    justify-content: end;
+}
+
+.resetPassword{
+    margin-top:30px;
+    margin-bottom:50px;
+    font-size:20px;
+    font-weight: 550;
+    color:rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.resetPassword:hover{
+    color:black;
+}
+
+.primaryBtn{
+    padding:10px;
+    width:200px;
+    font-size:25px;
+    font-family: 'Rethink Sans',sans-serif;
+    border: none;
+    background-color:#7469B6;
+    color:#FFE6E6;
+    border-radius: 10px;  
+    cursor: pointer;
+    transition: all ease-in 300ms;
+}
+
+.primaryBtn:hover{
+    background-color: #FFE6E6;
+    color:#7469B6;
+}
+
+.PrimaryBtnHolder{
+    display: flex;
+    justify-content: center;
+}
+.Spacer{
+    margin-bottom: 90px;
+}
+
+.listItem{
+    cursor:pointer;
+    font-size:19px;
+    transition: all ease-out 300ms;
+}
+
+.listItem:hover{
+    color:#944E63;
+    font-weight: 550;
+    transition: all ease-out 300ms;
+}
+.LoginTab{
+    width:40vw;
+    
+    /* transform: scale(0.9); */
+    /* margin-top:100px; */
+    margin-left: 40px;
+    /* background-color: #DEB6AB; */
+}
+
+.TabView{
+    display: flex;
+    justify-content: center;
+    margin-bottom:90px;
+}
+
+.eye{
+    position: absolute;
+    bottom:7px;
+    right: 18px;
+}
+
+.eyeS{
+    width:30px;
+    height:30px;;
+}
+
+.passwordInput{
+    position: relative;
+}
+
+.quoteContent{
+    font-size:100px;
+    color: #85586F;
+    margin-top:50px;
+    font-weight: 600;
+    margin-left:50px;
+    /* background-color: #7469B6; */
+}
+
+.quotePic{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.interestsTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.InterestsHolder{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    /* background-color: #944E63; */
+    
+}
+.InterestsContent{
+    position: absolute;
+    left: 10vw;
+    z-index: 99;
+}
+
+.MainTitle{
+    font-size:50px;
+    color:#F29727;
+    font-weight: 700;
+}
+
+.TitleCap{
+    font-size:25px;
+    font-weight: 550;
+}
+
+.nextBtn{
+    font-size:30px;
+    color:#DEB6AB;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nextBtn:hover{
+    color:#944E63;
+}
+
+.FirstRow, .SecondRow, .ThirdRow,.FourthRow{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:50px;
+}
+
+.ChipItem{
+    color:#1A936F;
+    border:3px solid #1A936F;
+    border-radius: 10px;
+    padding:10px 60px 10px 60px;
+    cursor: pointer;
+    font-size:25px;
+    font-weight: 550;
+    margin-right:50px;
+    background: none;
+}
+
+.EndImage{
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    
+}
+
+.ChipItem:hover{
+    background-color: #077a58;
+    color: #FFE6E6;
+}
+.ChipItem:active{
+    background-color: #0b946b;
+}
+
+.chipSelected{
+    background-color: #1A936F;
+    color: #FFE6E6;
+}
+.OneBar{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    cursor:pointer;
+}
+.NavItem{
+    display: flex;
+    align-items: center;
+    font-size:40px;
+    color:#DEB6AB;
+    font-weight: 600;
+    margin-top:30px;
+    text-align: center;
+    padding: 10px;
+    width: 180px;
+    background: none;
+    border: none;
+}
+.NavItem i{
+    margin-right: 20px;
+    /* height: 10px; */
+}
+.NavItem:hover{
+    color:#F8ECD1;
+    background-color: #944E63;
+    border-radius: 20px;
+    
+}
+.NavItem:hover p{
+    color:#F8ECD1;
+}
+.NavItem:active p{
+    color:#944E63;
+}
+.NavItem p{
+    cursor:pointer;
+}
+
+
+.NavItemSelected{
+    color:#944E63 ;
+}
+
+.NavBarHolder{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.HomePageHolder{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100vh;
+}
+
+.HomePageGrid{
+    display: flex;
+    justify-content: center;
+}
+
+.writingDecoy{
+    border:1px solid #DEB6AB;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size:20px;
+    color:#944E63;  
+    font-weight: 600;
+    justify-content: space-between;
+    margin-top:50px;
+    cursor: pointer;
+}
+
+.contentBox{
+    width:970px;
+    height: 700px;
+    resize: none;
+    outline: none;
+    background-color: #FEFBF4;
+    font-family: 'Rethink Sans',sans-serif;
+    border:1px solid #944E63;
+    border-radius: 10px;
+    font-size: 25px;
+    padding-left:16px;    
+    padding-top:20px;
+    padding-bottom:50px;
+}
+.contentBox::placeholder{
+    color:#AC7D88;
+}
+
+.WriteHolder{
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.titleBox{
+    outline: none;
+    border:1px solid #944E63;
+    padding:20px;
+    width:950px;
+    font-family: 'Rethink Sans',sans-serif;
+    border-radius: 10px;
+    background-color: #FEFBF4;
+    color:#944E63;
+    font-size:28px;
+    margin-bottom: 50px;
+}
+
+.titleBox::placeholder{
+    color: #AC7D88;
+}
+
+.SpacerTwo{
+    margin-top: 4n0px;;
+}
+
+.SearchBox{
+    position: relative;
+}
+
+.searchBox{
+    width:100%;
+    padding:20px;
+    font-size:22px;
+    background-color: #FEFBF4;
+    border:1px solid #944E63;
+    border-radius: 10px;
+    font-family: 'Rethink Sans',sans-serif;
+    outline: none !important;
+    font-weight: 550;
+}
+.searchIcon{
+    position: absolute;
+    top:22px;
+    right: 0;
+    font-size:22px;
+    color:#944E63;
+}
+
+.searchBox::placeholder{
+    color:#944E63;
+}
+
+.SearchPageHolder{
+    margin-top:50px
+}
+
+.WriteCardHolder{
+    width: 100%;
+    margin-top:50px;
+}
+
+.WriteCardHead{
+    display: flex;
+    align-items: center;
+}
+
+
+.WriteCardProfile > img{
+    background-color: #1A936F;
+    border-radius: 50%;
+}
+
+.CardUserName{
+    font-size:30px;
+    font-weight: 650;
+    margin-bottom: 0;
+}
+
+.CardUserAbout{
+    font-size:19px;
+    margin-top: 5px;
+    color:rgba(0,0,0,0.6);
+}
+
+.CardTitle{
+    font-size:35px;
+    font-weight: 650;
+    color:#944E63;
+    margin-bottom: 0;
+}
+
+.CardPromo{
+    font-size:20px;
+    line-height: 1.7;
+    font-weight: 550;
+}
+
+
+.Divider{
+    border-bottom: 1px solid #DEB6AB;
+    width: 100%;
+}
+
+
+
+.WriteCardHead{
+    cursor: pointer;
+}
+
+.WriteCardBody{
+    cursor: pointer;
+}
+.SearchComponentHolder{
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    cursor: pointer;
+}
+
+.SearchComponentTitle{
+    font-size:28px;
+    font-weight: 650;
+    margin-bottom: 10px;
+}
+
+.SearchComponentCap{
+    font-size:20px;
+    margin-top:0;
+}
+
+.ProfileCard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.ProfileHolder{
+    margin-top:50px;
+}
+
+.ProfileHolderTitle{
+    font-size:45px;
+    font-weight: 550;
+}
+
+.ProfileHolderCap{
+    font-size:22px;
+    font-weight: 550;
+    margin-top:8px;
+    color:rgba(0,0,0,0.6);
+}
+
+.TextButton{
+    text-align: end;
+    position:absolute;
+    right:20px; 
+    color:#944E63;
+    font-size: 23px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.ProfileWritings{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.ProfileWritingsTitle{
+    font-size:35px;
+    font-weight: 650;
+}
+
+
+.progress{
+    position: absolute !important;
+    top:0;
+    width: 100%;
+    background:none !important;
+}
+
+.loginBar{
+    font-size:20px;
+    color:rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+}
+
+::-webkit-scrollbar-track{
+    background:#FEFBF4;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#7469B6;
+}
+
+
+.textOn{
+    font-size:27px;
+    font-weight: 550;
+    color:#944E63;
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+}
+.link button{
+    background: none;
+    border: none;
+    color:#85586F;
+    font-size:0.5em;
+    font-weight: bold;
+text-transform: uppercase;
+margin-bottom: -90px;
+
+}
+
