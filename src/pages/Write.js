@@ -5,10 +5,10 @@ import Cookies from 'universal-cookie';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
-export default function Write(){
+export default function Write(props){
     const [loading, setLoading] = useState(0);
-    const [title, setTitle] = useState("");
-    const [text, setText] = useState("");
+    const [title, setTitle] = useState(props.title);
+    const [text, setText] = useState(props.text);
     const cookies = new Cookies();
     const navigate = useNavigate();
     const name = cookies.get("name")

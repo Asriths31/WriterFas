@@ -17,7 +17,7 @@ export default function Search(){
         })
         .then((res)=>{
             console.log(res.data)
-            setMatchedObjects(res.data[0].matchedObjects)
+            setMatchedObjects(res.data)
         })
         .catch((er)=>{
             console.log(er)
@@ -33,7 +33,7 @@ export default function Search(){
             </div>
             {
             matchedObjects.map((item)=>(
-                    <SearchComponent title={item.title} username={item.userName}/>
+                    <SearchComponent title={item.writings[0].title} username={item.userName} writing={item.writings[0].writing}/>
                 )) 
             }
         </div>

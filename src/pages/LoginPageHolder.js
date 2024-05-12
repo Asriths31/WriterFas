@@ -13,7 +13,7 @@ export default function LoginPageHolder(){
     const [quote,setQuote] = useState("A wise man said that");
 
     useEffect(()=>{
-        axios.get("http://localhost:3003/register",(req,res)=>{
+        axios.get("http://localhost:3003/quote",(req,res)=>{
             console.log(req)
         })
         .then((res)=>{
